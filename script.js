@@ -32,9 +32,7 @@ setInterval(hourChecker, 10000);
 
 
   
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
+  // get items from local storage
 
   $("#hour-9 .descrption").val(localStorage.getItem("hour-9"));
   $("#hour-10 .descrption").val(localStorage.getItem("hour-10"));
@@ -46,10 +44,7 @@ setInterval(hourChecker, 10000);
   $("#hour-16 .descrption").val(localStorage.getItem("hour-16"));
   $("#hour-17 .descrption").val(localStorage.getItem("hour-17"));
 
-  // TODO: Add code to display the current date in the header of the page.
-  //var currentDay = dayjs();
-  //$("#h2").text(today.format("MMM D, YYYY"));
-  //var currentDay = dayjs();
+  
   $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY"));
 });
  
